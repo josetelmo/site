@@ -590,11 +590,12 @@ strong {
 
 @media screen and (min-width: 991px) {
   .hero-section {
-    height: calc(90vh - 88px);
+    height: calc(70vh - 88px);
+    /*original 90vh-88px*/
     padding-top: 350px;
   }
 }
-
+ 
 
 /*---------------------------------------
   FEATURED              
