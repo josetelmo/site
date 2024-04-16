@@ -97,6 +97,10 @@ h6 {
   font-size: var(--h6-font-size);
 }
 
+.ex-h6 {
+   inherit: h6; /* Herda todos os estilos de h6 */
+}
+
 p {
   color: var(--p-color);
   font-size: var(--p-font-size);
