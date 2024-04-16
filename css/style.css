@@ -92,13 +92,9 @@ h5 {
   font-size: var(--h5-font-size);
 }
 
-h6 {
+h6, .ex-h6 {
   color: var(--secondary-color);
   font-size: var(--h6-font-size);
-}
-
-.ex-h6 {
-   inherit: h6; /* Herda todos os estilos de h6 */
 }
 
 p {
