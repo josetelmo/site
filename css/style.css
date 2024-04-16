@@ -92,7 +92,7 @@ h5 {
   font-size: var(--h5-font-size);
 }
 
-h6, .ex-h6 {
+h6 {
   color: var(--secondary-color);
   font-size: var(--h6-font-size);
 }
@@ -1060,3 +1060,14 @@ Removido a bossa diagonal do rodapé
   }
 }
 
+
+/*---------------------------------------
+  CUSTOM CODES
+-----------------------------------------*/
+
+/* classe para mudar os H6 para P*/
+.ex-h6 {
+  color: var(--secondary-color);
+  font-size: var(--h6-font-size);
+  font-weight: var(--font-weight-semibold);
+}
