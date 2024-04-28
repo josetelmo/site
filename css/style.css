@@ -550,7 +550,7 @@ strong {
   HERO        
 -----------------------------------------*/
 .hero-section {
-  background-image: url('../images/home-destaque-banner.jpg');
+  background-image: url('../imagens/home-destaque-banner.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -624,7 +624,7 @@ Remover a barra diagonal do banner
 -----------------------------------------*/
 .custom-block {
   /* IMAGEM DE FUNDO DAS AVALIAÇÕES */
-  /*background-image: url('../images/home-destaque-banner.jpg');*/
+  /*background-image: url('../imagens/home-destaque-banner.jpg');*/
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -768,7 +768,7 @@ Remover a barra diagonal do banner
   Owner SECTION            
 -----------------------------------------*/
 .owner-section {
-  background-image: url('../images/circle-scatter-haikei.png');
+  background-image: url('../imagens/circle-scatter-haikei.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left bottom;
@@ -791,7 +791,7 @@ Remover a barra diagonal do banner
   DIVIDER SECTION               
 -----------------------------------------*/
 .divider-section {
-  background-image: url('../images/wave-haikei.png');
+  background-image: url('../imagens/wave-haikei.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
