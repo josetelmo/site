@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="pt-br">
     <head>
-<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/28ae634f96ec479dc84d8d0a5/e4ab0a6b67dc65585a139f592.js");</script>
+
 <!-- INSERIR CÓDIGO DO GOOGLE ANALYTICS AQUI -->
 
 <!-- Google tag (gtag.js) -->
@@ -59,10 +59,14 @@
                         <span>Coffee</span>
                     </a>
 
+
+                    
+
+
                     <div class="d-lg-none ms-auto me-3">
-                        <a href="imagens/menu.jpg" target="_blank" class="btn custom-btn custom-border-btn btn-naira btn-inverted">
+                        <a href="#section_5" class="btn custom-btn custom-border-btn btn-naira btn-inverted">
                             <i class="btn-icon bi-cloud-download"></i>
-                            <span>Menu</span><!-- duplicated another one below for mobile -->
+                            <span>Contato</span><!-- duplicated another one below for mobile -->
                         </a>
                     </div>
     
@@ -93,10 +97,10 @@
                             </li>
                         </ul>
                         <div class="d-none d-lg-block">
-                            <a href="imagens/menu.jpg" target="_blank" class="btn custom-btn custom-border-btn btn-naira btn-inverted">
-                                <i class="btn-icon bi-cloud-download"></i>
-                                <span>Menu</span><!-- duplicated above one for mobile -->
-                            </a>
+                            <button id="openPopupButton" class="btn custom-btn custom-border-btn ">
+                                <i class="btn-icon bi bi-envelope-arrow-up-fill"></i>
+                                <span>Cadastre-se</span><!-- duplicated above one for mobile -->
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -443,90 +447,146 @@
             </section>
 
 
-            <section class="contact-section section-padding" id="section_5">
-                <div class="container">
+            <section class="contact-section section-padding">
+                <div class="container" id="section_5">
                     <div class="row">
 
+
+                        <!-- FORMULÁRIO CONTATO -->
                         <div class="col-lg-5 col-12 mx-auto">
-                            <form class="custom-form ebook-download-form bg-white shadow" action="#" method="post" role="form">
+                            <form class="custom-form ebook-download-form bg-white shadow" action="https://n.criaeenvia.com/integracao-optin/confirmacao-formulario" method="post" role="form" target="_blank" id="formIntegracaoHTML">
                                 <div class="text-center mb-5">
                                     <h2 class="mb-1">Entre em Contato</h2>
                                 </div>
-
+                        
                                 <div class="ebook-download-form-body">
                                     <div class="input-group mb-4">
-                                        <input type="text" name="ebook-form-name" id="ebook-form-name" class="form-control" aria-label="ebook-form-name" aria-describedby="basic-addon1" placeholder="Seu Nome" required>
-
+                                        <input type="email" name="email" id="email" class="form-control" placeholder="Seu E-mail" required>
                                         <span class="input-group-text" id="basic-addon1">
-                                            <i class="custom-form-icon bi-person"></i>
-                                        </span>
-                                    </div>
-
-                                    <div class="input-group mb-4">
-                                        <input type="email" name="ebook-email" id="ebook-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="nome@email.com.br" aria-label="ebook-form-email" aria-describedby="basic-addon2" required=">
-
-                                        <span class="input-group-text" id="basic-addon2">
                                             <i class="custom-form-icon bi-envelope"></i>
                                         </span>
                                     </div>
-
+                        
+                                    <div class="input-group mb-4">
+                                        <input type="text" name="nome" id="nome" class="form-control" placeholder="Seu Nome">
+                                        <span class="input-group-text" id="basic-addon2">
+                                            <i class="custom-form-icon bi-person"></i>
+                                        </span>
+                                    </div>
+                        
+                                    <!-- Não apagar as linhas abaixo -->
+                                    <input type="hidden" name="infos" value="R2NkcGViYTJ3RnUwMTlaRzI2Q3gwd2lZc2tVcFdQQXB1dVhwT09wajJOSWZQdnkrQ1k2cnJMUURSSk9HRzNlMDhPQkR5bzRvQU1vZW1NWVk1aWVLeGlEL2R0MVFvaGJ3ODdMNGRYbnBEK0k1bm1yWU83RFNmUWpweUpsNGtRK3p0cVBNNit5Zjk1RlVOejBFb0ZKdXZkMEVkL05tNFBVVmQ1WXFzdXIvMjR2SnpMRmJ2TE9vRVlIZjAzYnBkT1BiWWMzQ1NOR2s0RVc2cERZM3IrYVN5Zz09">
+                        
                                     <div class="col-lg-8 col-md-10 col-8 mx-auto">
-                                        <button type="submit" class="form-control">Enviar</button>
+                                        <button type="submit" class="form-control btn btn-primary">Inscreva-se</button>
                                     </div>
                                 </div>
-                            </form>
+                            </form> 
                         </div>
+                        
+                            <!-- BOTAO PARA POPUP NEWSLETTER -->
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function() {
+                                var loadPopupScript = function() {
+                                    (function(a, f, e, fa, n, y) {
+                                        y = a.createElement('script');
+                                        y.src = fa + '/assets/js/popup.js?v=' + +new Date();
+                                        y.onload = function() {
+                                            new f.nnpu(a[e]('body'), fa, n);
+                                        };
+                                        a[e]('head').appendChild(y);
+                                    })(document, window, 'querySelector', 'https://novo.nitronews.com.br',
+                                       '/formularios/consulta/eyJpdiI6IjlxTGZuQXJPYTlJRnN0VGxzVWVvN3c9PSIsInZhbHVlIjoiTE5ldzR0SkJReUJ4TEdRQ2FnRkgxZz09IiwibWFjIjoiMzdhOWZjZWUzNjEyZjk4YzE2MTFhNzRjYTlhN2ExMTRmMmU5OWQzOTQzNmJjZjIwZjIwOWRmOTMxNjdiODM1OCJ9');
+                                };
+                            
+                                // Adicionar evento de clique ao botão que carrega o popup
+                                document.getElementById('openPopupButton').addEventListener('click', loadPopupScript);
+                            });
+                            </script>
+                            
 
-                        <div class="col-lg-6 col-12">
-                            <p class="ex-h6 mt-5">Diga olá!</p>
 
-                            <h2 class="mb-4">Contato</h2>
+                        <!-- FIM FORMULÁRIO CONTATO -->
+                         
+                       <div class="col-lg-6 col-12">
+                               <p class="ex-h6 mt-5">Diga olá!</p>
+   
+                               <h2 class="mb-4">Contato</h2>
+   
+                               <p class="mb-3">
+                                   <i class="bi-geo-alt me-2"></i>
+                                   Brasil
+                               </p>
+   
+                               <p class="mb-2">
+                                   <a href="tel: 010-020-0340" class="contact-link">
+                                       010-020-0340
+                                   </a>
+                               </p>
+   
+                               <p>
+                                   <a href="mailto:info@company.com" class="contact-link">
+                                       info@company.com
+                                   </a>
+                               </p>
+   
+                               <p class="ex-h6 site-footer-title mt-5 mb-3">Social</p>
+   
+                               <ul class="social-icon mb-4">
+                                   <li class="social-icon-item">
+                                       <a href="#" class="social-icon-link bi-instagram inactive"></a>
+                                   </li>
+   
+                                   <li class="social-icon-item">
+                                       <a href="#" class="social-icon-link bi-twitter inactive"></a>
+                                   </li>
+                                   
+                                   <li class="social-icon-item">
+                                       <a href="#" class="social-icon-link bi-facebook inactive"></a>
+                                   </li>
+   
+                                   <li class="social-icon-item">
+                                       <a href="#" class="social-icon-link bi-whatsapp inactive"></a>
+                                   </li>
+                               </ul>
+   
+                               <p class="copyright-text">Copyright © 2048 Sophia
+                               <br><br><a rel="nofollow" href="#" target="_blank">designed by Sophia</a></p>
+                           </div><!-- FIM FORMULÁRIO CONTATO-->
 
-                            <p class="mb-3">
-                                <i class="bi-geo-alt me-2"></i>
-                                Brasil
-                            </p>
+                       
 
-                            <p class="mb-2">
-                                <a href="tel: 010-020-0340" class="contact-link">
-                                    010-020-0340
-                                </a>
-                            </p>
+                   </div>
 
-                            <p>
-                                <a href="mailto:info@company.com" class="contact-link">
-                                    info@company.com
-                                </a>
-                            </p>
 
-                            <p class="ex-h6 site-footer-title mt-5 mb-3">Social</p>
 
-                            <ul class="social-icon mb-4">
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-instagram"></a>
-                                </li>
 
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-twitter"></a>
-                                </li>
-                                
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-facebook"></a>
-                                </li>
-
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-whatsapp"></a>
-                                </li>
-                            </ul>
-
-                            <p class="copyright-text">Copyright © 2048 Sophia
-                            <br><br><a rel="nofollow" href="#" target="_blank">designed by Sophia</a></p>
-                        </div>
-
-                    </div>
                 </div>
             </section>
         </main>
+
+
+<!-- Inclua jQuery e Bootstrap para o modal -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" async></script>
+
+<div class="modal fade" id="responseModal" tabindex="-1" role="dialog" aria-labelledby="responseModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="responseModalLabel">Inscrição</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Resposta será exibida aqui -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
         <!-- JAVASCRIPT FILES -->
         <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -534,6 +594,8 @@
         <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js" integrity="sha512-QABeEm/oYtKZVyaO8mQQjePTPplrV8qoT7PrwHDJCBLqZl5UmuPi3APEcWwtTNOiH24psax69XPQtEo5dAkGcA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- jquery-click-scroll by syamsul'isul' Arifin -->
         <script async src="https://d33wubrfki0l68.cloudfront.net/js/328ceb015e16ba830a9610e485e5137b8ca224c7/demo/click-scroll/js/click-scroll.js" async></script>
+
+        
 
     </body>
 </html>
